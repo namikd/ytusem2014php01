@@ -8,7 +8,7 @@ echo $sifre2 = "Guclu Sifre: " . guclu_sifre_uret();
 function basit_sifre_uret($uzunluk = 10)
 {
     $sifre= "";
-    $karakter1 = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+    $karakterler_1 = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
     if($uzunluk <= 3)
     {
         echo "Sifre 3 karakterden uzun olmali";
@@ -16,7 +16,7 @@ function basit_sifre_uret($uzunluk = 10)
     else{
     for($i=1;$i<$uzunluk+1;$i++)
     {
-       $sifre.= $karakter1{
+       $sifre.= $karakterler_1{
            rand()%52
            };
        
@@ -27,7 +27,7 @@ function guclu_sifre_uret($uzunluk = 10)
 {
     
     $sifre2 = "";
-    $karakter2 = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ+-/?*!0123456789";
+    $karakterler_2 = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ+-/?*!0123456789";
     if($uzunluk <= 3)
     {
         echo "Sifre 3 karakterden uzun olmali";
@@ -35,7 +35,7 @@ function guclu_sifre_uret($uzunluk = 10)
     else{
     for($j=1;$j<$uzunluk+1;$j++)
     {
-        $sifre2.= $karakter2{
+        $sifre2.= $karakterler_2{
             rand()%68
             };
         
